@@ -12,8 +12,7 @@
       "eslint"
     ],
     "*.{js,css}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "main": "dist/cjs/focus-visible.js",
