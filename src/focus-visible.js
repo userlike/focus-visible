@@ -10,6 +10,12 @@ function applyFocusVisiblePolyfill(scope) {
   var hadFocusVisibleRecently = false;
   var hadFocusVisibleRecentlyTimeout = null;
 
+  /**
+   * @type {(Document)}
+   */
+  var document =
+    scope.nodeType === Node.DOCUMENT_NODE ? scope : scope.ownerDocument;
+
   var inputTypesAllowlist = {
     text: true,
     search: true,
