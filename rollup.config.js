@@ -1,5 +1,5 @@
 import { defineConfig } from 'rollup';
-import { uglify } from 'rollup-plugin-uglify';
+import { terser } from 'rollup-plugin-terser';
 
 export default defineConfig([
   {
@@ -18,7 +18,7 @@ export default defineConfig([
       format: 'umd',
       sourcemap: true
     },
-    plugins: [uglify()]
+    plugins: [terser()]
   },
   {
     input: 'src/focus-visible.js',
