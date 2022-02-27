@@ -29,7 +29,7 @@ export function enablePonyfill(scope) {
     week: true,
     time: true,
     datetime: true,
-    'datetime-local': true
+    'datetime-local': true,
   };
 
   /**
@@ -172,7 +172,7 @@ export function enablePonyfill(scope) {
       // regular focus change.
       hadFocusVisibleRecently = true;
       window.clearTimeout(hadFocusVisibleRecentlyTimeout);
-      hadFocusVisibleRecentlyTimeout = window.setTimeout(function() {
+      hadFocusVisibleRecentlyTimeout = window.setTimeout(function () {
         hadFocusVisibleRecently = false;
       }, 100);
       removeFocusVisibleClass(e.target);
