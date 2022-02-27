@@ -1,5 +1,5 @@
 {
-  "name": "focus-visible",
+  "name": "@userlike/focus-visible",
   "version": "6.0.0-1",
   "description": "Polyfill for :focus-visible pseudo-selector",
   "scripts": {
@@ -20,14 +20,14 @@
   "module": "dist/es/focus-visible.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/WICG/focus-visible.git"
+    "url": "https://github.com/userlike/focus-visible.git"
   },
-  "author": "WICG",
+  "author": "Userlike",
   "license": "W3C",
   "bugs": {
-    "url": "https://github.com/WICG/focus-visible/issues"
+    "url": "https://github.com/userlike/focus-visible/issues"
   },
-  "homepage": "https://github.com/WICG/focus-visible",
+  "homepage": "https://github.com/userlike/focus-visible",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.2",
     "@rollup/plugin-node-resolve": "^13.1.3",
