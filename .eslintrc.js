@@ -7,5 +7,11 @@ module.exports = {
   // We specifically DO NOT want ESLint to try to enforce a style guide on us.
   // We use prettier for that.
   plugins: ['es5'],
-  extends: ['plugin:es5/no-es2015', 'plugin:es5/no-es2016', 'prettier']
+  extends: ['plugin:es5/no-es2015', 'plugin:es5/no-es2016', 'prettier'],
+  parserOptions: {
+    sourceType: 'module'
+  },
+  rules: {
+    'es5/no-modules': 'off'
+  }
 };
